@@ -1,4 +1,4 @@
-name: Step 3, Fix broken sidebar
+name: Step 3
 
 # This step listens for the learner opening, editing, or reopening a pull request.
 # This workflow updates from step 3 to step X.

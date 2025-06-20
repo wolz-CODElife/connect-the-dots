@@ -29,6 +29,9 @@ jobs:
     needs: [start_exercise]
     env:
       ISSUE_URL: ${{ needs.start_exercise.outputs.issue-url }}
+    outputs:
+      original_issue: ${{ steps.issue_a.outputs.original_issue }}
+      duplicate_issue: ${{ steps.issue_b.outputs.duplicate_issue }}
 
     steps:
       - name: Checkout
@@ -125,8 +128,8 @@ jobs:
           template-file: ${{ env.STEP_1_FILE }}
           template-vars: |
             full_repo_name=${{ github.repository }}
-            original_issue=${{ steps.issue_a.outputs.original_issue }}
-            duplicate_issue=${{ steps.issue_b.outputs.duplicate_issue }}
+            original_issue=${{ needs.check_step_work.outputs.original_issue }}
+            duplicate_issue=${{ needs.check_step_work.outputs.duplicate_issue }}
 
       - name: Create comment - add step content
         run: |

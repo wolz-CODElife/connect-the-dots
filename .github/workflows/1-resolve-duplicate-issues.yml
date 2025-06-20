@@ -1,4 +1,4 @@
-name: Step 1, Resolve duplicate issues
+name: Step 1
 
 # This step listens for the learner creating or editing an issue comment.
 # This workflow updates from step 1 to step 2.
@@ -124,8 +124,8 @@ jobs:
 
       - name: Disable current workflow and enable next one
         run: |
-          gh workflow disable "Step 1, Resolve duplicate issues"
-          gh workflow enable "Step 2, Find commit in history"
+          gh workflow disable "Step 1"
+          gh workflow enable "Step 2"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

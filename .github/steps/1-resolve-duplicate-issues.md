@@ -27,4 +27,4 @@ When you want to create a crosslink, start typing the title of an issue or pull 
 1. Navigate to the issue #{{duplicate_issue}} (Welcome)
 2. Type "Duplicate of #{{original_issue}}" as a comment and close issue #{{duplicate_issue}}
 3. As you close the issue, Mona will prepare the next step in this exercise!
-_
+

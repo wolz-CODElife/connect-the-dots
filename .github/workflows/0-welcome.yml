@@ -21,7 +21,7 @@ jobs:
     uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.3.0
     with:
       exercise-title: "Connect the Dots"
-      intro-message: "Learn to navigate a GitHub repository effectively."
+      intro-message: "Let's learn to navigate a GitHub repository effectively!"
 
   post_next_step_content:
     name: Post next step content

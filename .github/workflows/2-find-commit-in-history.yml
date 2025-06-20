@@ -1,4 +1,4 @@
-name: Step 2, Find commit in history
+name: Step 2
 
 # This step listens for the learner creating or editing an issue comment.
 # This workflow updates from step 2 to step 3.
@@ -135,7 +135,7 @@ jobs:
 
       - name: Disable current workflow and enable next one
         run: |
-          gh workflow disable "Step 2, Find commit in history"
-          gh workflow enable "Step 3, Fix broken sidebar"
+          gh workflow disable "Step 2"
+          gh workflow enable "Step 3"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

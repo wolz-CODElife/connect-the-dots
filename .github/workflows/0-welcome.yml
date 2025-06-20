@@ -1,4 +1,4 @@
-name: Step 0, Welcome
+name: Step 0
 
 on:
   push:
@@ -128,6 +128,6 @@ jobs:
 
       - name: Enable next step workflow
         run: |
-          gh workflow enable "Step 1, Resolve duplicate issues"
+          gh workflow enable "Step 1"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

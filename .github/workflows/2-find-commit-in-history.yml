@@ -59,15 +59,11 @@ jobs:
     name: Check current step number
     runs-on: ubuntu-latest
     outputs:
-      current_step: ${{ steps.get_step.outputs.current_step }}
       commit_id: ${{ steps.get_commit_id.outputs.commit_id }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - id: get_step
-        run: |
-          echo "current_step=$(cat ./.github/steps/-step.txt)" >> $GITHUB_OUTPUT
       - id: get_commit_id
         run: |
           echo "commit_id=$(cat .github/files/SIDEBARCOMMIT)" >> $GITHUB_OUTPUT

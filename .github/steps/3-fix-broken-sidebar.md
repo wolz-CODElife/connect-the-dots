@@ -36,4 +36,4 @@ When you're looking at a commit on GitHub, you can see a lot of information. Fro
 7. Click **Create pull request** and wait about 20 seconds.
 8. Merge this pull request.
 9. Delete the branch 'fix-sidebar'.
-10. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+10. After you merge the PR and delete the branch, Mona will prepare the next step in this exercise!
